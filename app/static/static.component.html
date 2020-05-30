@@ -1,0 +1,35 @@
+<div class="navig">
+    <img class="ibsimg" src="../assets/logo.png">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            Welcome {{employeeId}}
+            <button mat-button [matMenuTriggerFor]="account"><mat-icon>account_circle</mat-icon><mat-icon>arrow_drop_down</mat-icon></button>
+            <mat-menu class="menu" #account="matMenu">
+                <button mat-menu-item>About Me</button>
+                <button mat-menu-item (click)="logout()">Sign Out</button>
+            </mat-menu>
+            <div class="icon" ><mat-icon  routerLink="/help" routerLinkActive #helpTab="routerLinkActive">help_outline</mat-icon></div>
+        </div>
+           
+    </nav>
+</div>
+<div class="activity">
+<!--<nav mat-tab-nav-bar>
+  
+        <a mat-tab-link *ngIf="roleid==1" routerLink="/upload" routerLinkActive #uploadTab="routerLinkActive" ><p class="tab">Upload</p></a>
+        <a mat-tab-link routerLink="/view" routerLinkActive #viewTab="routerLinkActive" ><p class="tab">View/Edit</p></a>
+        <a mat-tab-link routerLink="/sendMail" routerLinkActive #sendTab="routerLinkActive" ><p class="tab">Send Mail</p></a>
+        <a mat-tab-link *ngIf="roleid==1" routerLink="/access" routerLinkActive #registerTab="routerLinkActive"><p class="tab">Register</p></a>
+
+</nav>-->
+
+<nav mat-tab-nav-bar>
+  
+	<p class="tab" mat-tab-link *ngIf="roleid==1" routerLink="/upload" routerLinkActive #uploadTab="routerLinkActive" [active]="uploadTab.isActive">Upload</p>
+    <p class="tab" mat-tab-link routerLink="/view" routerLinkActive #viewTab="routerLinkActive" [active]="viewTab.isActive">View/Edit</p>
+
+    <p class="tab" mat-tab-link routerLink="/sendMail" routerLinkActive #sendMailTab="routerLinkActive" [active]="sendMailTab.isActive">SendMail</p>
+        <p class="tab" mat-tab-link *ngIf="roleid==1" routerLink="/access" routerLinkActive #accessTab="routerLinkActive" [active]="accessTab.isActive">Register</p> 
+</nav>
+
+</div>

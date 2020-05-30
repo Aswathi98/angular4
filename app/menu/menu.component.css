@@ -1,0 +1,36 @@
+.searchbar{
+    margin-top: 10px;
+}
+.navbar{
+    /* margin-top: 10%; */
+    width:100%;
+    padding: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+.bg-light[_ngcontent-c4][_ngcontent-c4] {
+    background-color: #11a3bb!important;
+}
+.row{
+    margin-top:1%;
+    margin-left: 3%;
+}
+.nav-tabs .nav-link.active{
+    background-color: rgb(85, 218, 211);
+    border-color:rgb(85, 218, 211);
+}
+.nav-tabs {
+    border-bottom: 1px solid#11a3bb;
+}
+.header-right{
+    margin-left: 1%;
+    margin-top: -0.5%;
+}
+.logbar{
+    width: 200%;
+}
+.sebar{
+    margin-top: 10%;
+}

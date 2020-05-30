@@ -1,0 +1,54 @@
+.logoimg{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 20px grey;
+}
+.login{
+    color:#0e415e;
+}
+
+.logindiv{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 20px grey;
+    border-radius: 5px;
+    text-align: center;
+    padding:50px;
+}
+
+
+
+.loginfields{
+width: 80%;
+height:50px;
+}
+.ibsimg{
+    height: 80px;
+    padding-left: 50px;
+    padding-top: 10px;
+    width: 210px;
+}
+.loginbox{
+        width: 73%;
+        margin-left: 156px;
+
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: #0e415e;
+}
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+    color: #db443d;
+}
+
+.mat-warn .mat-input-element, .mat-form-field-invalid .mat-input-element {
+    color: #db443d;
+}
+.mat-form-field {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color:#db443d;
+    font-family: Arial, Helvetica, sans-serif;
+}

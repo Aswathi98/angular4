@@ -1,0 +1,154 @@
+.mail {
+
+  border-collapse: collapse;
+  width: 100%;
+  font-family: monospace;
+    font-size: 16px;
+    box-shadow: 10px 10px 10px gray;
+    margin-top: 50px;
+    margin: auto
+}
+.text{
+  color:#0E415E;
+  font:bold;
+
+
+}
+.buttonStyle{
+  color:white;
+  text-align: center;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.mail td, .mail th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.mail tr:nth-child(even){background-color: #f2f2f2;}
+
+.mail tr:hover {background-color: #ddd;}
+
+.mail th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00aaa9;
+  color: #343a40;
+}
+
+.divtable{
+position: relative;
+top:50px;
+}
+.page{
+    margin-bottom: 45px;
+    background: #fff;
+}
+.ngx-pagination {
+    margin-bottom: 15px;
+    margin-top: 87px;
+    text-align: center;
+    font-size: large;
+    background:#0E415E
+}
+.dropdown{
+     margin-left: 100px;
+    font-size: 15px;
+    width: 175px;
+    height: 26px;
+       
+}
+
+  .dropdown{
+margin-top: -26px;
+  }
+  .heading{
+    font-size: 15px;
+  }
+.page{
+   
+    margin-top: 145px;
+    margin-left: 1012px;
+    font-size: 15px;
+  
+
+}
+.after, ::before{
+      font-size: 16px;
+}
+
+ .btn-danger{
+  margin: auto;
+  color:black;
+}
+
+.bottom{
+text-align: center;
+}
+
+
+
+.btn
+{
+    margin-left: 110px;
+    margin-top: -40px;
+    width: 93px;
+    height: 32px;
+    font-size: 15px;
+   background-color: #00aaa9;
+   border-color: black;
+}
+
+.select-option{
+      width: 93px;
+    height: 32px;
+    font-size:15px;
+}
+.choose{
+
+    margin-left: 28px;
+    font-size:12px;
+        margin-top: 20px;
+}
+.select{
+   width: 142px;
+    height: 23px;
+}
+.bottom{
+      margin-top: 60px;
+}
+
+.mat-cell:first-of-type, .mat-footer-cell:first-of-type, .mat-header-cell:first-of-type  {
+padding-left:177px;
+  
+
+}
+.mat-header-cell, .mat-cell{
+  font-family: Arial, Helvetica, sans-serif;
+ 
+} 
+.mat-form-field {
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.mat-select {
+    font-family: Arial, Helvetica, sans-serif;
+     
+}
+.mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.template{
+  margin-right:50px;
+}
+.mat-form-field-ripple {
+    background-color: #0E415E;
+}
+.mat-form-field-underline {
+    height: 1px;
+    background-color: #0e415e;
+}

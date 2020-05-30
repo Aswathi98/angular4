@@ -1,0 +1,37 @@
+<app-static>
+</app-static>
+<div class="template">
+    <form action=" " method="post" #templateForm="ngForm" (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+        <br>
+
+        <mat-card-content>
+
+            <div >
+                <mat-form-field appearance="outline" class="tempfields">
+                    <mat-label>Enter template name</mat-label>
+                    <input mat-input required type="text" matInput placeholder="Enter template name" ngModel name="templateType" #names="ngModel">
+                </mat-form-field>           
+            </div>
+            <br> <br>
+
+
+
+
+
+          
+                <div>
+                <mat-form-field appearance="outline" class="loginfields">
+                    <mat-label>Input html code</mat-label>
+                  <textarea matInput matInput placeholder="Paste code here" ngModel name="template" #password="ngModel" required></textarea> 
+                </mat-form-field>  
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <button [disabled]="templateForm.form.invalid" type="submit" mat-raised-button style="background-color: #00aaad;width: 9%;padding-top: 10px;line-height: 20px;"> <p style="color: white;font-family: Arial, Helvetica, sans-serif;font-weight: bold"> Save  </p></button>
+                </div>
+                
+        
+        </mat-card-content>
+    </form>
+</div>

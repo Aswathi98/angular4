@@ -1,0 +1,20 @@
+.dioo{
+    margin-top: 0%;
+}
+p.serif {
+    font-family: "Arial", Helvetica, sans-serif;
+    } 
+    .form-control-lg{
+        line-height: 2.5;
+        width: 196px;
+    }
+    .aa{
+        margin-left: 10px;
+    }
+    .form-control-lg {
+        height: calc(1.5em + 1rem + -9px);
+        padding: -6.5rem -1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+    }

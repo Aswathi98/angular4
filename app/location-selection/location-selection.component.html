@@ -1,0 +1,53 @@
+<span class="nav-1 userlogout">
+
+       
+      
+
+      <div class=" citybar">
+            <div class="col-12 citybar">
+<!-- 
+                   <label for="city">
+                        <h5>City</h5> 
+                  </label> -->
+                  <select class=" custom-select" (change)="changeCity($event)">
+                        <option>Select City</option>
+                        <option *ngFor="let city of citynames" [value]="city.cityId" [ngValue]="city.cityId">{{city.cityName}}</option>
+
+                  </select>
+
+            </div>
+            
+          
+
+            <div class="col-12 citybar">
+
+
+                  <!-- <label for="city">
+                        <h5>Facility</h5>
+                  </label> -->
+                  <select class=" custom-select" (change)="changeFacility($event)">
+                        <option> Select facility</option>
+
+                        <option *ngFor="let facility of facilitynames" [value]="facility.facilityId" [ngValue]="facility.facilityId">{{facility.facilityName}}</option>
+                  </select>
+            </div>
+           
+            <div class="col-12 floorbar">
+                  <!-- <label for="city">
+                        <h5>Floor</h5>
+                  </label> -->
+                  <select class=" custom-select" (change)="changeFloor($event)">
+                        <option>Select floor</option>
+
+                        <option *ngFor="let floor of floornumber" [value]="floor.floorId" [ngValue]="floor.floorId">{{floor.floorName}}</option>
+
+                  </select>
+            </div>
+
+      </div>
+
+
+
+
+
+</span>

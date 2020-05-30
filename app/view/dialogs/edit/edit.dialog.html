@@ -1,0 +1,228 @@
+<div class="container">
+  <h3 mat-dialog-title>Amcat Id: <b>{{data.amcatId}}</b></h3>
+
+  <form class="mat-dialog-content" (ngSubmit)="submit" #formControl="ngForm">
+
+    <div *ngIf="false" class="form">
+      <mat-form-field appearance="outline"   color="accent">
+        <input matInput #input class="form-control" placeholder="Amcat Id" [(ngModel)]="data.amcatId" name="amcatId" required >
+        <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+
+      <div *ngIf="false" class="form">
+        <mat-form-field color="accent">
+          <input matInput placeholder="Date of Drive" [(ngModel)]="data.dateOfDrive" name="dateOfDrive">
+        </mat-form-field>
+    </div>
+
+      <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+           <mat-label>Enter Venue of Drive</mat-label>
+          <input matInput #input class="form-control" placeholder="Venue of Drive" [(ngModel)]="data.venueOfDrive" name="venueOfDrive">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Student Name</mat-label>
+        <input matInput #input class="form-control" placeholder="Student Name" [(ngModel)]="data.studentName" name="Student Name"  [pattern]="namePattern" required >
+        <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter Gender</mat-label>
+          <input matInput placeholder="Gender" [(ngModel)]="data.gender" name="gender">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline"  color="accent">
+        <mat-label>Enter Graduation Year</mat-label>
+        <input matInput placeholder="Graduation Year" [(ngModel)]="data.yearOfGraduation" name="yearOfGraduation">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter College Name</mat-label>
+        <input matInput placeholder="College Name" [(ngModel)]="data.collegeName" name="collegeName">
+      </mat-form-field>
+    </div>
+
+        <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter University</mat-label>
+          <input matInput placeholder="University" [(ngModel)]="data.university" name="university">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Student Course</mat-label>
+        <input matInput placeholder="Student Course" [(ngModel)]="data.studentCourse" name="studentCourse">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Student Branch</mat-label>
+        <input matInput placeholder="Student Branch" [(ngModel)]="data.studentBranch" name="studentBranch">
+      </mat-form-field>
+    </div>
+
+        <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter Class 10 Marks</mat-label>
+          <input matInput placeholder="Class 10" [(ngModel)]="data.markTenth" name="markTenth">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Class 12 Marks</mat-label>
+        <input matInput placeholder="Class 12" [(ngModel)]="data.markTwelve" name="markTwelve">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter College Marks</mat-label>
+        <input matInput placeholder="College Marks" [(ngModel)]="data.collegeMarks" name="collegeMarks">
+      </mat-form-field>
+    </div>
+
+        <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter College Percentage</mat-label>
+          <input matInput placeholder="College Percentage" [(ngModel)]="data.collegePercentage" name="collegePercentage">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter Student Address</mat-label>        
+        <input matInput placeholder="Student Address" [(ngModel)]="data.studentAddress" name="studentAddress">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Student Mobile</mat-label>
+        <input matInput placeholder="Student Mobile" [(ngModel)]="data.studentMobile" name="studentMobile" [pattern]="numberPattern">
+      </mat-form-field>
+    </div>
+
+        <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter Additional Contact No.</mat-label>
+          <input matInput placeholder="Additional Contact No." [(ngModel)]="data.additionalContactNumber" name="additionalContactNumber" [pattern]="numberPattern">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Student Email</mat-label>
+        <input matInput placeholder="Student Email" [(ngModel)]="data.studentEmail" name="studentEmail"  [pattern] = "emailPattern">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Additional EmailId</mat-label>
+        <input matInput placeholder="Additional EmailId" [(ngModel)]="data.addtionalEmailId" name="addtionalEmailId"  [pattern] = "emailPattern">
+      </mat-form-field>
+    </div>
+
+        <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter College Address</mat-label>
+          <input matInput placeholder="College Address" [(ngModel)]="data.collegeAddress" name="collegeAddress">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Placement Officer</mat-label>
+        <input matInput placeholder="Placement Officer" [(ngModel)]="data.nameOfPlacementOfficer" name="nameOfPlacementOfficer"  [pattern]="namePattern">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Contact number Placement Offficer</mat-label>
+        <input matInput placeholder="Contact number Placement Offficer" [(ngModel)]="data.numberOfPlacementOfficer" name="numberOfPlacementOfficer" [pattern]="numberPattern">
+      </mat-form-field>
+    </div>
+
+        <div class="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter Email Id Placement Offficer</mat-label>
+          <input matInput placeholder="Email Id Placement Offficer" [(ngModel)]="data.emailOfPlacementOfficer" name="emailOfPlacementOfficer"  [pattern] = "emailPattern">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Pre Learning</mat-label>
+        <input matInput placeholder="Pre Learning" [(ngModel)]="data.preLearningLink" name="preLearningLink">
+      </mat-form-field>
+    </div>
+
+    <div *ngIf = "roleid==3||roleid==1" class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Litmus Batch</mat-label>
+        <input matInput placeholder="Litmus Batch" [(ngModel)]="data.litmusBatch" name="litmusBatch">
+      </mat-form-field>
+    </div>
+
+        <div *ngIf = "roleid==3||roleid==1" sclass="form">
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Enter Litmus Status</mat-label>
+          <input matInput placeholder="Litmus Status" [(ngModel)]="data.litmusStatus" name="litmusStatus">
+        </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Remarks</mat-label>
+        <input matInput placeholder="Remarks" [(ngModel)]="data.studentRemarks" name="studentRemarks">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Additional Remarks</mat-label>
+        <input matInput placeholder="Additional Remarks" [(ngModel)]="data.studentAdditionalRemarks" name="studentAdditionalRemarks">
+      </mat-form-field>
+    </div>
+
+        <div *ngIf="false" appearance="outline" class="form">
+        <mat-form-field color="accent">
+          <mat-label>Enter Created Time</mat-label>
+          <input matInput placeholder="Created Time" [(ngModel)]="data.createdTime" name="createdTime">
+        </mat-form-field>
+    </div>
+
+    <div *ngIf="false" class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter Modified Time</mat-label>
+        <input matInput placeholder="Modified Time" [(ngModel)]="data.modifiedTime" name="modifiedTime">
+      </mat-form-field>
+    </div>
+   <div *ngIf = "roleid==3||roleid==1" class="form">
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>Enter BGV Status</mat-label>
+        <input matInput placeholder="BGV Status" [(ngModel)]="data.backgroundVerification" name="backgroundVerification">
+      </mat-form-field>
+    </div>
+
+
+    <div mat-dialog-actions>
+      <button mat-button class="save" [type]="submit" [disabled]="!formControl.valid" [mat-dialog-close]="1" (click)="stopEdit()"><p class="savetext"> Save</p></button>
+      <button mat-button type="reset" (click)="onNoClick()" tabindex="-1">Cancel</button>
+    </div>
+  </form>
+</div>

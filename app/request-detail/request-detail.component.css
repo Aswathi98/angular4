@@ -1,0 +1,36 @@
+
+/* .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+    margin-top: -14%;
+    position: relative;
+    left: 213px;
+} */
+/* .btnn btn-primary{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+    margin-top: -14%;
+    position: relative;
+    left: 253px;
+} */
+.selector{
+    left: 1%;
+    display: inline;
+    float:right;
+    padding-right: 10%;
+    width: 123%;
+}
+
+.thead{
+    background-color: brown;
+}
+.container-fluid{
+    padding: 10px;
+}
+.space2{
+    margin-right:40px;
+}

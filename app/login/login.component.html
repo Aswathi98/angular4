@@ -1,0 +1,44 @@
+<div class="logoimg">
+    <img class="ibsimg" src="./assets/logo.png"  />
+</div>
+  
+<div class="loginbox">
+    <div class="logindiv">
+
+        <div class="innercontent">     
+    <form action=" " method="post"  #userForm="ngForm" (ngSubmit)="onSubmit(f)" #f="ngForm" >
+      <h1 class="login"> Login </h1>
+      <br>
+           
+           <mat-card-content>  
+               
+               <div>
+                <mat-form-field appearance="outline" class="loginfields"> 
+                    <mat-label>Enter username</mat-label>
+            <input mat-input required type="text"  matInput placeholder="Username" ngModel name="username" #names="ngModel" >
+         <div *ngIf="names.invalid && names.touched"></div>   
+             </mat-form-field>
+                       </div>
+                       <br> <br>
+    
+    
+     <div>
+    <mat-form-field appearance="outline" class="loginfields">
+        <mat-label>Enter password</mat-label>
+ <input mat-input  type="password" matInput placeholder="Password" ngModel name="password" #password="ngModel" required>
+            <div *ngIf="password.invalid &&  password.touched" > </div> 
+     </mat-form-field>
+       </div>
+  <br><br>
+        <div class="form-group">
+            <button [disabled] ="userForm.form.invalid" type="submit" mat-raised-button style="background-color: #00aaad;width: 50%;padding-top: 10px;"> <p style="color: white"> Login  </p></button>
+        </div>
+
+     </mat-card-content>
+         </form>
+   </div>
+</div>
+   </div>
+
+
+  

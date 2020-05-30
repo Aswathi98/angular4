@@ -1,0 +1,91 @@
+<app-static></app-static>
+<div class="card m-3">
+  
+       
+<div class="registerdiv">   
+      
+    <form action=" " method="post" #registerForm="ngForm" (ngSubmit)="onSubmit(f)" #f="ngForm" >
+            <div class="access">
+                 <h2 style="color:#0e415e"><b>Access Page</b></h2>
+            </div>
+           <mat-card-content>     
+               <div>
+                <mat-form-field appearance="outline" class="registerfields" > 
+                    <mat-label> Username</mat-label>
+            <input mat-input required type="text"  matInput placeholder="Username" [pattern]="namesPattern" ngModel name="names" #names="ngModel">
+       <mat-error *ngIf="names.hasError('required')">
+                   This field is required</mat-error>
+
+
+<mat-error *ngIf="names.errors?.pattern"> 
+   User name not valid.
+</mat-error> 
+
+
+
+             </mat-form-field>
+                       </div>
+                       
+                     <br> <br>
+
+            <div>
+                <mat-form-field appearance="outline" class="registerfields" > 
+                    <mat-label>Enter Employee Id</mat-label>
+            <input mat-input required type="text"  matInput placeholder="EmployeeId" [pattern]="userIdPattern" ngModel name="userId" #userId="ngModel">
+       <mat-error *ngIf="userId.hasError('required')">
+                   This field is required</mat-error>
+                   <br>
+                 <mat-error *ngIf="userId.hasError('required')">
+                   User Id must be of the format "A-****"</mat-error>
+
+<mat-error *ngIf="userId.errors?.pattern"> 
+   User Id not valid.
+</mat-error> 
+
+
+             </mat-form-field>
+                       </div>
+                       <br> <br>
+ <div>
+
+                <mat-form-field appearance="outline" class="registerfields"> 
+                    <mat-label>Enter Password</mat-label>
+                      <!--<mat-pass-toggle-visibility #toggle matSuffix></mat-pass-toggle-visibility>-->
+            <input mat-input required minlength="6" type="password"  matInput placeholder="Password"  ngModel name="password" #password="ngModel">
+            <mat-error *ngIf="password.hasError('required')">
+                    Password is required and must be 6 characters in length</mat-error>
+         <!--<mat-hint align="end" aria-live="polite">
+    {{password.value.length}} / 25
+  </mat-hint>
+        -->
+             </mat-form-field>
+                       </div>
+                       <br> <br>
+
+
+
+             <div>
+                <mat-form-field appearance="outline" class="registerfields"> 
+ <mat-label>Enter Role</mat-label>
+
+<mat-select required ngModel name="roleType" #roleType="ngModel">
+       <mat-option value="admin">Admin</mat-option>
+    <mat-option value="recruiter">Recruiter</mat-option>
+    <mat-option value="hr">HR</mat-option>
+</mat-select>
+<mat-error *ngIf="roleType.hasError('required')">
+    This field is required
+  </mat-error>
+         
+             </mat-form-field>
+                       </div>
+                       <br> <br>
+        <div class="form-group">
+            <button [disabled] ="registerForm.form.invalid" type="submit"  #button mat-raised-button style="background-color: #00aaad;width: 19%;line-height: 22px;"> <p style="color: white;margin-top: 11px;"> Register </p></button>
+        </div>
+
+     </mat-card-content>
+         </form>
+   </div>
+</div>
+ 

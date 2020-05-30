@@ -1,0 +1,93 @@
+<div class="col-md-10">
+        <app-header></app-header>
+      </div>
+<div class=" col-12">
+    <app-menu></app-menu>
+
+</div>
+
+
+<div class="row">
+    <div class=" container-fluid">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="pending request" name="request" [(ngModel)]="option" value="2" (change)="selectionsort()">
+        <label class="space2" for="pending request" style="color: rgb(228, 150, 34) "> Pending </label>&nbsp;&nbsp;
+        <input type="radio" id="accepted request" name="request" [(ngModel)]="option" value="1" (change)="selectionsort()">
+        <label class="space2" for="accepted request" style="color:#1db41d ">Approved </label>&nbsp;&nbsp;
+        <input type="radio" id="declined request" name="request" [(ngModel)]="option" value="3" (change)="selectionsort()">
+        <label for="declined request" style="color:#b81919 ">Declined </label>
+
+    </div>
+
+
+
+
+
+
+    <div class="col-12"  >
+
+        <div class="col-12">
+            <table id=table_id class="table table-bordered">
+                <thead class="thead "  style="background-color: #00b4b4;color: aliceblue;text-align: left">
+                    <tr>
+                        <th> Id </th>
+                        <th>Employee ID</th>
+                        <th>Space ID</th>
+                        <th>Employee Name</th>
+                        <th>Allocation Type</th>
+                        <th>Creation Date</th>
+                        <!-- <th>Start Date</th>
+                        <th>End Date</th> -->
+                        <th>Initiated By</th>
+                        <th>Initiated On</th>
+                        <th>Status</th>
+                        <th *ngIf="!isShow">
+
+                            Decision
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let user of users">
+
+                        <td>{{user.requestId}}</td>
+                        <td>{{user.empId}}</td>
+                        <td>{{user.spaceId}}</td>
+                        <td>{{user.ip}}</td>
+                        <td>{{user.type}}</td>
+                        <td>{{user.creationDate}}</td>
+                        <!-- <td>{{user.startDate}}</td>
+                        <td>{{user.endDate}}</td> -->
+                        <td>{{user.reccomender}}</td>
+                        <td>{{user.recommendedOn}}</td>
+                        <td>{{user.status}}</td>
+
+
+                        <div *ngIf="!isShow">
+
+                            <td style="display: flex;">
+                                <button class="btn " style="display: flex; float: left;" (click)="approveClick(user)">&#10004; </button>
+                                <br>
+                                <button class="btn" style="display: flex; float: right;" (click)="declineClick(user)"> &#10060; </button>
+                            </td>
+                        </div>
+
+                        <!-- <button class="btn btn-primary">Reject</button></td> -->
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <!-- <button class="btn btn-primary">Accept</button>
+    <button class="btn btn-primary">Reject</button> -->
+
+    </div>
+    
+
+</div>
+<div class="text-danger" style="text-align: center" *ngIf="err && err !=''">{{err}}</div>

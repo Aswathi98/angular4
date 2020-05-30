@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+  <div class=" navbar clearfix nav-tabs" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link  my-2 my-sm-0" (click)="spaceClick()" [ngClass]="{ 'active': screen=='spacemap' }" style="color: rgb(255, 255, 255) ">SpaceMap </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  my-2 my-sm-0" (click)="onClick()" [ngClass]="{ 'active': screen =='request' }" style=" color: rgb(255, 255, 255) ">Request</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  my-2 my-sm-0" (click)="swapClick()" [ngClass]="{ 'active': screen =='swap' }" style=" color: rgb(255, 255, 255) ">Transfer Request</a>
+      </li>
+
+
+    </ul>
+    <!-- <div class="header-right" style=" border-radius: 16px;">
+      <select class="logobar" style="margin-top: 10px;border-color: white;border-radius: 16px;" (change)="changeCity()">
+        <option> &#9786; {{id}}</option>
+        <option>
+
+         
+          Logout
+        </option>
+
+
+      </select>
+
+
+    </div> -->
+    <!--    <button class ="abk btn btn-danger"  (click)="logoutClick()">
+              Logout {{id}}
+          </button>  -->
+
+  </div>
+</nav>
+<!-- <div class="row sebar">
+
+  <form (ngSubmit)="post(f)" #f="ngForm">
+
+    <div class="form-inline my-2 my-lg-0 Searchbar">
+
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="fName" [ngModelOptions]="{standalone: true}"
+        [ngbTypeahead]="search">
+
+      <small *ngIf="searching" class="form-text text-muted">searching...</small>
+      <div class="invalid-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>
+
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+
+    </div>
+
+  </form>
+
+
+</div> {{id.empId|json}}  -->

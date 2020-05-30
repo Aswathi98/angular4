@@ -1,0 +1,25 @@
+<div class="container">
+  <h3 mat-dialog-title>Add Litmus Batch</h3>
+
+  <form class="mat-dialog-content" (ngSubmit)="submit" #formControl="ngForm">
+
+    <div class="form">
+      <mat-form-field appearance="outline"   color="accent">
+        <mat-label>Enter Litmus Batch</mat-label>
+        <input matInput #input class="form-control"  placeholder="Litmus Batch" [(ngModel)]="data.litmusBatch" name="Litmus Batch"
+          [matAutocomplete]="auto" required>
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of batchName" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-actions>
+      <button mat-button class="save" [type]="submit" [disabled]="!formControl.valid" [mat-dialog-close]="1" (click)="confirmAdd()"><p class="savetext">Save</p></button>
+      <button mat-button (click)="onNoClick()" tabindex="-1">Cancel</button>
+    </div>
+  </form>
+</div>

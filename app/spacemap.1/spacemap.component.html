@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Space Management System</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+	<link href="../../assets/css/jquery.seat-charts.css" rel="stylesheet" />
+	<link href="../../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<!-- <div class=" col">
+		<app-menu></app-menu>
+
+	</div> -->
+	<div class="col-md-10">
+  <app-header></app-header>
+</div>
+<div class=" col-12">
+	<app-menu></app-menu>
+
+</div>
+
+
+
+
+
+<body>
+
+	<div class="row selector3">
+		<div class="searchbar">
+			<app-search></app-search>
+		</div>
+		<div class="col-2">
+			<app-location-selection></app-location-selection>
+		</div>
+	</div>
+	<div class="col-12">
+
+		<div class="wrapper">
+			<div class="mt-5" *ngIf="loader">
+				<div class="spinner-grow text-primary" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-secondary" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-success" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-danger" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-warning" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-info" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-light" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-dark" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			</div>
+<div>
+		<div *ngIf="reloadiv" id="legend"></div>
+</div>
+			<div *ngIf="reloadiv" class="col-8">
+				<div id="seat-map">
+					<!-- <div class="front-indicator">Front</div> -->
+
+					<!-- <div id="legend" style="z-index: +50;"></div> -->
+				</div>
+
+			</div>
+		</div>
+
+
+		<div *ngIf="reloadiv" class="col-3 req3" style="float:right">
+			<app-empdetails></app-empdetails>
+
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>

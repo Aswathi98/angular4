@@ -1,0 +1,27 @@
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+    margin-top: -14%;
+    position: relative;
+    left: 213px;
+}
+.btnn btn-primary{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+    margin-top: -14%;
+    position: relative;
+    left: 253px;
+}
+.container-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -50px;
+}
+.space1{
+    margin-right:40px;
+}

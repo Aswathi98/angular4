@@ -1,0 +1,77 @@
+.Structure 
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Toolbar */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Filter */
+.form {
+  min-height: 56px;
+  max-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px 0;
+  font-size: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  flex-grow: 1;
+  margin-top: 8px;
+}
+
+/* Mat table */
+.no-results {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.mat-header-row{
+    padding-left: 12px;
+}
+.mat-toolbar-row,.mat-toolbar-single-row{
+    margin-top: 57px;
+    background-color: white;
+}
+
+
+
+.mat-icon-button{
+  color: #0e415e;
+}
+
+.mat-raised-button{
+   background-color: #00aaad;
+   color: white;
+}
+
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: #0e415e !important;
+  border-color:white;
+}
+
+/*// overwrite the ripple overlay on hover and click*/
+::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element {
+  background-color: #0e415e !important;
+  border-color: white;
+}
+
+td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type {
+  border-color:white;
+}
+.mat-header-cell, .mat-cell, .form{
+  font-family: Arial, Helvetica, sans-serif;
+
+}

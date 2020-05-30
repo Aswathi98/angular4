@@ -1,0 +1,121 @@
+
+.header {
+text-align: center;
+}
+
+.header h1 {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 38px;
+
+}
+
+.content {
+    margin: 100px;
+}
+
+.margin25 {
+margin: 25px;
+}
+
+.upload {
+cursor: pointer;
+} 
+
+.control-section{
+    padding-top:220px;
+}
+
+.control_wrapper {
+    max-width: 500px;
+    min-width: 245px;
+    margin: auto;
+}
+#defaultfileupload .e-upload.e-control {
+    position: relative;
+    margin: 15px 0;
+}
+.e-upload {
+    float: none;
+}
+.e-upload .e-upload-actions {
+    float: none;
+    text-align: right;
+}
+.sequential-upload {
+    padding-top: 18px;
+}
+.col-lg-9{
+    padding-left: 353px;
+}
+.uploadbtn{
+   
+    margin-top: 9px;
+    margin-left: -41px; 
+    font-size: 15px;
+   background-color: #00aaad;
+    color: white;
+    border-color: #00aaad;
+}
+.uploadbtn:hover{
+    background-color: #00aaad;
+    color:white;
+    }
+
+.e-grid .e-gridheader {
+    background-color: #fff;
+    border-bottom-color: white;
+    border-top-color: white;
+    color: white;
+
+}
+.e-grid {
+    border-color: white;
+}
+.download{
+   
+    font-size:15px;
+    margin-left: 446px;
+    margin-top: 49px;
+}
+.excel{
+margin-top: 130px;
+    margin-left: -19px;
+}
+.btn-link{
+     color: #0e415e;
+     font-size: 15px;
+     margin-top: -57px;
+    margin-left: 815px;
+}
+.e-css.e-btn{
+        background-color: white;
+    color: #00aaad;
+}
+
+.e-css.e-btn:hover{
+    background-color: white;
+    color: #00aaad;
+}
+.swal2-confirm.swal2-styled{
+color:white;
+background-color:#00aaad;
+border-color:white;
+}
+.swal2-title{
+color:#00aaad;
+}
+.swal2-content{
+color:#0e415e;
+font-weight:bold;
+}
+.e-upload.e-control-wrapper, .e-bigger.e-small .e-upload.e-control-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.e-upload .e-file-select-wrap .e-btn, .e-upload .e-upload-actions .e-btn, .e-bigger.e-small .e-upload .e-file-select-wrap .e-btn, .e-bigger.e-small .e-upload .e-upload-actions .e-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}

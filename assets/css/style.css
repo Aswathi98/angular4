@@ -1,0 +1,203 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+a {
+    color: #b71a4c;
+}
+.front-indicator {
+    width: 145px;
+    margin: 5px 32px 15px 32px;
+    background-color: #f6f6f6;  
+    color: #adadad;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+}
+.wrapper {
+    width: 1024px;
+    text-align: center;
+}
+/* .container:hover{
+    z-index: +2;
+    margin-top: 10%;
+    margin-left: 10%;
+    transform: scale(1.5);
+}  */
+.container {
+
+    margin-left: 1%;
+    height: 400px;
+    width:400px;
+    text-align: left;
+}
+.booking-details {
+    margin-left:150%;
+    float: right;
+    text-align: left;
+    
+    font-size: 12px;
+    position: relative;
+    margin-top: -500px;
+}
+.booking-details h2 {
+    margin-top: 1px;
+    /* height: 2px; */
+    font-size: 22px;
+    margin-left: 70%;
+    
+}
+.booking-details h3 {
+    top: 1%;
+    left: 1%;
+    font-size: 12px;
+}
+div.seatCharts-cell {
+    color: #182C4E;
+    height: 60px;
+    width: 60px;
+    line-height: 25px;
+    
+}
+div.seatCharts-seat {
+    color: #FFFFFF;
+    cursor: pointer;    
+}
+div.seatCharts-row {
+    height: 35px;
+}
+div.seatCharts-seat.available {
+    background-color: rgb(120, 4, 165);
+
+}
+div.seatCharts-seat.available.first-class {
+/*  background: url(vip.png); */
+width: 60px;
+height: 60px;
+    background-color: #3a78c3;
+}
+div.seatCharts-seat.focused {
+    background-color: #00b4b4;  
+}
+div.seatCharts-seat.selected {
+    background-color: #76B474;
+}
+div.seatCharts-seat.unavailable {
+    background-color: #669ee2;
+}
+div.seatCharts-container {
+    height: 600px;
+    width: 157%;
+    padding: 20px;
+    float: left;
+}
+div.seatCharts-legend {
+    padding-left: 0px;
+    position: relative;
+    z-index: +10px;
+    top: -10%;
+        /* bottom: 16px; */
+        
+		
+}
+ul.seatCharts-legendList {
+    padding-left: 0px;
+}
+span.seatCharts-legendDescription {
+    /* margin-left: 5px; */
+    /* line-height: 30px; */
+}
+.checkout-button {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+}
+#selected-seats {
+    list-style: none;
+    max-height: 90px;
+    overflow-y: none;
+    overflow-x: none;
+    width: 100%;
+}
+div.seatCharts-seat.available.Empty {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(153, 152, 152);   
+}
+div.seatCharts-seat.available.Operations {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(117, 5, 139); 
+}
+div.seatCharts-seat.unavailable.Operations {
+    /*  background: url(vip.png); */
+    width: 30px;
+    height: 30px;
+    background-color: rgb(117, 5, 139); 
+}
+div.seatCharts-seat.available.Mains {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(66, 43, 197); 
+}div.seatCharts-seat.unavailable.Mains {
+    /*  background: url(vip.png); */
+    width: 30px;
+    height: 30px;
+    background-color: rgb(66, 43, 197); 
+}
+div.seatCharts-seat.available.Chains {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(243, 155, 23);    
+}
+div.seatCharts-seat.unavailable.Chains {
+    /*  background: url(vip.png); */
+    width: 30px;
+    height: 30px;
+    background-color: rgb(243, 155, 23);    
+}
+div.seatCharts-seat.available.Services {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(109, 172, 51);    
+}
+div.seatCharts-seat.unavailable.Services {
+    /*  background: url(vip.png); */
+    width: 30px;
+    height: 30px;
+    background-color: rgb(109, 172, 51);    
+}
+div.seatCharts-seat.available.Kites {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(128, 5, 41);  
+}
+div.seatCharts-seat.unavailable.Kites {
+    /*  background: url(vip.png); */
+    width: 30px;
+    height: 30px;
+    background-color: rgb(128, 5, 41);  
+}
+div.seatCharts-seat.available.Amex {
+    /*  background: url(vip.png); */
+    width: 60px;
+    height: 60px;
+    background-color: rgb(4, 66, 117);  
+}
+div.seatCharts-seat.unavailable.Amex {
+    /*  background: url(vip.png); */
+    width: 30px;
+    height: 30px;
+    background-color: rgb(4, 66, 117);  
+}
+
+
+
+.nav-item{
+    cursor: pointer;
+}

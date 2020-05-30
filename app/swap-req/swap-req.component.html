@@ -1,0 +1,66 @@
+<!-- <div class="row r">
+    <div class="col-12">
+         <h1>
+          Request Form
+        </h1> 
+    </div>
+</div>  -->
+
+
+<div class="dio  ">
+
+    <div style="color: #004164;">
+        <h3 class="serif" style="font-size: 20px">Transfer Form</h3>
+        </div>
+
+
+  <form (ngSubmit)="post()">
+
+    <input class="form-control form-control-lg" type="text" id="empId" name="empId"  value="{{num}}" disabled [(ngModel)]="request1.requestedSpaceId"
+      [ngModelOptions]="{standalone: true}">
+    <!-- <label class="for form-control-lg">Employee ID</label> -->
+
+
+    <form (ngSubmit)="post1(f)" #f="ngForm">
+
+      <div class="form-inline my-2 my-lg-0 Searchbar">
+
+        <input class="form-control mr-sm-2" type="search" placeholder="Employee Name"  style="font-size: 16px"  aria-label="Search" [(ngModel)]="fName" [ngModelOptions]="{standalone: true}"
+          [ngbTypeahead]="search">
+
+        <small *ngIf="searching" class="form-text text-muted">searching...</small>
+        <div class="invalid-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>
+
+
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>  -->
+
+      </div>
+
+    </form>
+
+
+
+
+
+
+    <input class="form-control form-control-lg" type="text" placeholder="Employee ID"  style="font-size: 16px"  disabled [(ngModel)]="request1.empId" [ngModelOptions]="{standalone: true}">
+    <!-- <label class="for form-control-lg">IP</label> -->
+    <!-- <input class="form-control form-control-lg" type="text" placeholder="Employee ID"  [(ngModel)]="Request.ip" [ngModelOptions]="{standalone: true}"> -->
+
+
+    <!-- <label class="for form-control-lg" style="color: #058585;">Request Type</label> 
+  <select class="for form-control-lg" name="Request Type" placeholder="Request Type" [(ngModel)]="Request.type" [ngModelOptions]="{standalone: true}">
+      <option value="Allocation request" selected  >Allocation request</option>
+      <option value="Deallocation request">Deallocation request</option>
+  </select> -->
+    <br>
+    
+    <button type="submit" class="btn btn" style="background :#04c4c4;color:#fff;">Submit</button>
+        
+      
+    <a href="/manager/home" class="btn btn" style="background :#a3a7a7;color:#fff;">Cancel</a> 
+
+
+
+  </form>
+</div>

@@ -1,0 +1,19 @@
+
+<app-static></app-static>
+
+
+<div class="control-section">
+	<div class="col-lg-9">
+		<div class="control_wrapper">
+			<ejs-uploader #defaultupload id='defaultfileupload' [dropArea]='dropElement' (selected)='onFileRemove($event)' (change)="onSuccess($event)"></ejs-uploader>
+		</div>
+		<ejs-grid #grid id='grid'>
+		</ejs-grid>
+	</div>
+</div>
+
+<button class="uploadbtn" mat-raised-button type ="submit" (click)="onPost()" #button mat-raised-button style="background-color: #00aaad;width: 8%;line-height: 40px;
+    margin-top: 10px;">Upload</button>
+<div class="excel">
+<p class="download">Download the Excel format by clicking the download link : </p>  &nbsp;
+<button (click)="exportAsXLSX()" class="btn btn-link"><b>Download</b></button></div>

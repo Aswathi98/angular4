@@ -1,0 +1,45 @@
+.one{
+    width:100%;
+    height:100%;    
+    background-color: aqua;
+
+}
+.abk{
+    margin-left: 5%;
+    text-align: center;
+}
+/* .container{
+width: 20%;
+height: 20%;
+} */
+/* .booking-details{
+    float: right;
+} */
+/* .req{
+    width: 100%;
+    height: 100%;
+    margin-left: -60%;
+    margin-top: 0%;
+    
+} */
+/* h2{
+    margin-left: 80%;
+} */
+/* .shyam{
+   margin-left: 82%; 
+} */
+
+/* .wrapper:hover{
+    transform: scale(1);
+} */
+
+.selector3{
+/* display: flex;
+float: right; */
+margin-left: 3.8%;
+}
+ul.seatCharts-legendList {
+    padding-left: inherit;
+    display: flex;
+}
+

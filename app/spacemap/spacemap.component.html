@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+	<link href="../../assets/css/jquery.seat-charts.css" rel="stylesheet" />
+	<link href="../../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<!-- <div class=" col-md-12">
+	<app-menu></app-menu>
+</div> -->
+<!-- <div class="row">
+		
+
+			<app-empdetails></app-empdetails>
+		
+	</div> -->
+	<div class="col-md-10">
+			<app-header></app-header>
+		  </div>
+
+
+<body>
+	<div class=" col-12">
+		<app-menu></app-menu>
+
+	</div>
+	<div class="row ml-4">
+			<div class="col-2 ml-3">
+					<p>Employee Name</p>
+				</div>
+		<div class="col-2 city" >
+			<p>City<span style="color: red">*</span></p>
+		</div>
+		<div class="col-2 facility ">
+			<p>Facility<span style="color: red">*</span></p>
+		</div>
+		<div class="col-2 floor">
+			<p>Floor<span style="color: red">*</span></p>
+		</div>
+	</div>
+	<div class="row selector3">
+		<div class="searchbar">
+			<app-search></app-search>
+		</div>
+		<div class="col-2">
+			<app-location-selection></app-location-selection>
+		</div>
+
+		<div class="row toggle">
+
+			<button (click)="show = !show" class="cll btn btn-info " style="display: block;">{{show ? 'Employee Details' : 'New Request'}}</button>
+
+
+			<button class="treq btn btn-info" style=" float: left">
+			 Transfer Request
+			</button>
+
+
+
+		</div>
+
+
+
+
+	</div>
+	<div class="col-8">
+		<div class="wrapper">
+			<div class="mt-5" *ngIf="loader">
+				<div class="spinner-grow text-primary" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-secondary" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-success" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-danger" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-warning" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-info" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-light" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+				<div class="spinner-grow text-dark" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			</div>
+			<div class="row">
+				&nbsp;
+			</div>
+			<div *ngIf="reloadiv" id="legend"></div>
+
+			<div *ngIf="reloadiv" class="col-8">
+				<div id="seat-map">
+					<!-- <div class="front-indicator">Front</div> -->
+
+				</div>
+
+				<!--  -->
+			</div>
+			
+		</div>
+
+
+	</div>
+
+	<div *ngIf="reloadiv">
+		<div class="col-3 req3" style="float:left">
+
+			<div *ngIf="show; else elseBlock">
+
+				<app-req-window></app-req-window>
+			</div>
+			<ng-template #elseBlock style="display: flex">
+				<div class="col-2" style="display: flex;float: left">
+					<!-- <app-swap-req></app-swap-req> -->
+					<app-empdetails></app-empdetails>
+					
+				</div>
+
+				<div class="col-2" style="display: flex;float: right">
+
+				</div>
+
+
+			</ng-template>
+
+
+		</div>
+	</div>
+
+	<div class="col-2 treqq" style="float:left">
+		<app-swap-req></app-swap-req>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.foot{
+   
+
+
+     position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#096B7E;
+    color: white;
+    
+    /* height: 7%; */
+    text-align: center;
+
+   
+}

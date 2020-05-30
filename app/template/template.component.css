@@ -1,0 +1,35 @@
+.template {
+  margin: 0;
+  text-align: center;
+  margin-top: 120px;
+}
+.template .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color:#0e415e;
+}
+.template .tempfields{
+  width: 350px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.template .loginfields{
+  width: 350px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.template .form-group{
+  margin-top: 46px;
+}
+.template .mat-form-field-appearance-outline .mat-form-field-infix{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.template .mat-error {
+    color: #db443d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.template .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color:#db443d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.template .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+    color: #db443d;
+    font-family: Arial, Helvetica, sans-serif;
+}

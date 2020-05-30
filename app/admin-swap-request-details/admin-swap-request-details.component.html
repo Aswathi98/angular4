@@ -1,0 +1,77 @@
+
+	<div class="col-md-10">
+			<app-header></app-header>
+		  </div>
+    <div class="col-12">
+        <app-menu></app-menu>
+    </div>
+
+
+<div class="col-12"  >
+        <div class=" container-fluid">
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="pending request" name="request" [(ngModel)]="option" value="2" (change)="selectionsort()">
+                <label for="pending request" class="space3"  style="color: rgb(228, 150, 34) "> Pending </label>&nbsp;&nbsp;
+                <input type="radio" id="accepted request" name="request" [(ngModel)]="option" value="1" (change)="selectionsort()">
+                <label for="accepted request" class="space3"  style="color:#1db41d ">Approved </label>&nbsp;&nbsp;
+                <input type="radio" id="declined request" name="request" [(ngModel)]="option" value="3" (change)="selectionsort()">
+                <label for="declined request" style="color:#b81919 ">Declined </label>
+        
+            </div>
+
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead class="thead "  style="background-color: #00b4b4;color: aliceblue;">
+                <tr>
+                    <th> Id </th>
+                    <th class="col-xs-2">Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Initiated By</th>
+                    <th class="col-xs-2">Space ID</th>
+                    <th>Status</th>
+                    <th class="col-xs-2">Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Manager</th>
+                    <th class="col-xs-2">Space ID</th>
+
+                    <th *ngIf="!isShow">
+
+                        Decision
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let user of users">
+
+                    <td>{{user.requestId}}</td>
+                    <td>{{user.empId}}</td>
+                    <td>{{user.empName}}</td>
+                    <td>{{user.recommender}}</td>
+                    <td>{{user.currentSpaceId}}</td>
+                    <td>{{user.status}}</td>
+                    <td>{{user.empId2}}</td>
+                    <td>{{user.empName2}}</td>
+                    <td>{{user.manager}}</td>
+                    <td>{{user.requestedSpaceId}}</td>
+                    <!-- <td>{{user.Decision}}</td> -->
+
+
+                    <div *ngIf="!isShow">
+
+                        <td style="display: flex;">
+                            <button class="btn " style="display: flex; float: left;" (click)="approveClick(user)">&#10004; </button>
+                            <br>
+                            <button class="btn" style="display: flex; float: right;" (click)="declineClick(user)"> &#10060; </button>
+                        </td>
+                    </div>
+
+                    <!-- <button class="btn btn-primary">Reject</button></td> -->
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>

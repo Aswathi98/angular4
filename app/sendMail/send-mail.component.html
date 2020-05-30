@@ -1,0 +1,69 @@
+<app-static>
+</app-static>
+
+<mat-form-field class="choose" >
+    <mat-label>Choose Batch</mat-label>
+  <mat-select required [(ngModel)]='optionSelected' (ngModelChange)='onOptionsSelected($event)' style="font-size: 15px;">
+    <mat-option *ngFor='let option of batchName' [value]="option"> <p style="font-size: 15px;"> {{option}} </p> </mat-option>
+ </mat-select>
+ </mat-form-field> 
+<!--Table Starts here-->
+
+
+<div class="divtable" >
+  <mat-table #table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="amcatId">
+      <mat-header-cell *matHeaderCellDef> Amcat Id </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.amcatId}} </mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="studentName">
+      <mat-header-cell *matHeaderCellDef> Student Name </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.studentName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="studentEmail">
+      <mat-header-cell *matHeaderCellDef> Student Email </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.studentEmail}} </mat-cell>
+    </ng-container>
+
+   
+    <ng-container matColumnDef="studentMobile">
+      <mat-header-cell *matHeaderCellDef> Student Mobile </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.studentMobile}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+    <mat-paginator #paginator
+              [length]="totalRec"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+
+</div>
+
+
+<!--Table Ends here-->
+
+  <div class="bottom">
+  <div class="col-md-6 text-right" >
+    <mat-form-field >
+    <mat-label>Choose a type:</mat-label>
+<mat-select required  [(ngModel)]='templateSelected' (ngModelChange)='onTemplateSelected($event)' style="font-size: 15px;">
+  
+    <mat-option class='option' *ngFor='let temp of templateType ' [value]="temp" ><p style="font-size: 15px;"> {{temp}} </p> </mat-option>
+</mat-select>
+    </mat-form-field>
+</div>
+
+<div class="col-md-6 text-left">
+  <button  #button mat-raised-button style="background-color: #00aaad;width: 18%;line-height: 18px;" (click)="sendMail()"> <p class="buttonStyle"
+  >Send Mail</p></button>
+   <button class="template" #button mat-raised-button routerLink="/temp" routerLinkActive style="background-color: #00aaad;width: 18%;line-height: 18px;margin-left: 20px;padding-left: 10px;" > <p class="buttonStyle"
+  >Add template</p></button>
+  </div>
+</div>

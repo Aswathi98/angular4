@@ -1,0 +1,75 @@
+<app-static></app-static>
+  <div class="header">
+    <h1 class="headingtext">Help</h1>
+</div>
+<div class="text">
+<mat-accordion>
+      <!--<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            Privileges
+        </mat-panel-title>    
+          </mat-expansion-panel-header>    
+            </mat-expansion-panel>-->
+
+             <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       <h1 style="font-family:Arial, Helvetica, sans-serif"> Privileges</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul>
+   <li> <strong> Admin:</strong> Given the privileges to upload,edit,send mail and register.The Admin is given sole access to the entire application.</li>
+<li><strong> HR:</strong> Given the privileges to edit and send mail</li>
+<li><strong> Recruiter:</strong> Given the privilges to  send mail and edit the columns except litmus status,litmus batch,BGV status</li>
+</ul>
+  </mat-expansion-panel>
+
+   <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       <h1  style="font-family:Arial, Helvetica, sans-serif"> Upload</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    
+  
+<p>While uploading excel sheet points to note:</p>
+<ul>
+  <li>Download the sample excelsheet from the webpage after downloading make sure date of drive cell is of type text </li>
+  <li>Click on browse button to select the filled excel sheet and then click on the upload button.The excel sheet will be uploaded.  </li>
+</ul>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       <h1  style="font-family:Arial, Helvetica, sans-serif">View/Edit</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul>
+<li>The <strong> Admin</strong> can  filter,sort and group the selected students into a batch using the Add to batch option.When you click on Add to Batch option a pop up is envoked where the user can provide  a unique batch name. If  you are entering an already existing batch make sure to spell the batch name correctly to avoid a new batch being created</li> 
+
+<li>The <strong>Recruiter </strong> can filter,sort the table .Editing is also possible except litmus batch,litmus status,BGV columns.The Add to batch option is disabled for Recruiter</li>
+<li>The <strong> HR </strong> can filter,sort and group the selected students into a batch using the Add to batch option.Also has the privilge to edit all the columns.</li>
+</ul>
+  </mat-expansion-panel>
+
+    <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       <h1  style="font-family:Arial, Helvetica, sans-serif"> SendMail</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul>
+  <li>Click on the dropdown to select the  required batch </li>
+  <li>Click  on the template dropdown to select the type of mail to be send to that particular batch</li>
+  <li>To add a new Template click on add to template where the user is required to provide template type and template in html format.</li>  
+</ul>  
+
+
+
+  </mat-expansion-panel>
+
+
+</mat-accordion>
+</div>

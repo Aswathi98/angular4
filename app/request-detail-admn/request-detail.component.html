@@ -1,0 +1,71 @@
+<div class="col-md-10">
+        <app-header></app-header>
+      </div>
+<div class=" col-12">
+    <app-menu></app-menu>
+</div>
+
+
+
+<div class="col-12">
+
+    <div class=" container-fluid" style="text-align: left">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <input type="radio" id="pending request"  name="request" [(ngModel)]="option" value="2" (change)="selectionsort()">
+        <label class="space1" for="pending request" style="color:rgb(216, 149, 25)"> Pending</label>&nbsp;&nbsp;
+      
+        <input type="radio" id="accepted request" name="request" [(ngModel)]="option" value="1" (change)="selectionsort()">
+        <label class="space1" for="accepted request" style="color: #159415 ">Approved</label>&nbsp;&nbsp;
+       
+        <input type="radio" id="declined request" name="request" [(ngModel)]="option" value="3" (change)="selectionsort()">
+        <label for="declined request" style="color: #9e1b1b ">Declined </label>
+    
+    </div>
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead class="thead"  style="background-color: #00b4b4;color: aliceblue;">
+                <tr>
+                    <th style="text-align: left"> Request Id </th>
+                    <th style="text-align: left">Employee Id</th>
+                    <th style="text-align: left">Space Id</th>
+                    <th style="text-align: left">Employee Name</th>
+                    <th style="text-align: left">Allocation Type</th>
+                    <th style="text-align: left">Creation Date</th>
+                    <!-- <th>Start Date</th>
+                        <th>End Date</th> -->
+                    <th style="text-align: left">Initiated By</th>
+                    <th style="text-align: left">Initiated On</th>
+                    <th style="text-align: left" >Status</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let user of users">
+
+                    <td>{{user.requestId}}</td>
+                    <td>{{user.empId}}</td>
+                    <td>{{user.spaceId}}</td>
+                    <td>{{user.ip}}</td>
+                    <td>{{user.type}}</td>
+                    <td>{{user.creationDate|date:'d/MM/yyyy'}}</td>
+                    <!-- <td>{{user.startDate}}</td>
+                        <td>{{user.endDate}}</td> -->
+                    <td>{{user.reccomender}}</td>
+                    <td>{{user.recommendedOn|date:'d/MM/yyyy'}}</td>
+                    <td *ngIf="val=='Approved'"><span style="background: #159415;border-radius: 5px;color: #fff;font-weight: bold;padding: 5px; text-transform: capitalize;">{{user.status}}</span></td>
+                    <td *ngIf="val=='pending'"><span style="background: rgb(216, 149, 25);border-radius: 5px;color: #fff;font-weight: bold;padding: 5px;">{{user.status}}</span></td>
+                    <td *ngIf="val=='Declined'"><span style="background: #9e1b1b;border-radius: 5px;color: #fff;font-weight: bold;padding: 5px; text-transform: capitalize;">{{user.status}}</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- <button class="btn btn-primary">Accept</button>
+    <button class="btn btn-primary">Reject</button> -->
+
+</div>

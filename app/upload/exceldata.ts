@@ -1,0 +1,30 @@
+export interface Exceldata {
+    amcatId: number;
+    dateOfDrive: string;
+    venueOfDrive: string;
+    studentName: string;
+    gender: string;
+    yearOfGraduation: number;
+    collegeName: string;
+    university: string;
+    studentCourse: string;
+    studentBranch: string;
+    markTenth: number;
+    markTwelve: number;
+    collegeMarks: number;
+    collegePercentage: number;
+    studentAddress: string;
+    studentMobile: number;
+    additionalContactNumber: number;
+    studentEmail: string;
+    additionalEmailId:string;
+    collegeAddress: string;
+    nameOfPlacementOfficer:string;
+    numberOfPlacementOfficer:number;
+    emailOfPlacementOfficer:string;
+    preLearningLink:string;
+    litmusBatch:string;
+    litmusStatus:string;
+    studentRemarks:string;
+    studentAdditionalRemarks:string;
+}

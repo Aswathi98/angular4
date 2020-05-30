@@ -1,0 +1,71 @@
+.abk{
+    margin-left: 50%; 
+}
+.head{
+    font-size: larger;
+    font-family: "Arial", Helvetica, sans-serif;
+    padding-top: 20%;
+}
+p.serif { 
+    font-family:"Arial";
+    font-weight: 200; 
+    font-size:16px;
+    /* margin-top:0cm; */
+    padding-left: 32px;
+    padding-top: 17px;
+    color:black;
+
+    } 
+
+    .table {
+        width: 450%;
+        margin-top: 48px;
+        margin-bottom: 1rem;
+        margin-left: -68px;
+        color: #095d6b;
+        padding-left: 10%;
+    }
+
+    .row aa{
+        margin-top: 40px;
+        margin-left: 50%;
+    }
+    
+
+    .h5.serif{
+        margin-top:100%;
+    }
+
+    dio1 {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+        padding: 20%;
+        
+    }
+.empd{
+    margin-left: 9.5%;
+    font-size: 26px;
+}
+/* .empside{
+    font-size: 24px;
+    color: black;
+    float: right;
+    top: 0%;
+} */
+.secondary{
+    font-family:"Arial";
+    color:black;
+    font-weight: 450; 
+    font-size:20px;
+    /* margin-top:0cm; */
+    padding-left: 32px;
+    padding-top: 17px;
+    
+}
+element.style {
+    margin-left: 32px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    float: left;
+}
